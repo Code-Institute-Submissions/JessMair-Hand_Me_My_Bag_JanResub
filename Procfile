@@ -1,1 +1,1 @@
-﻿web: gunicorn handmemybag.wsgi
+web: gunicorn handmemybag.wsgi
