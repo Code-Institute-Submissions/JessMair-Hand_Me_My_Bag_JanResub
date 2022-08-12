@@ -1,5 +1,5 @@
 # Models
-
+- add all others 
 - Description - image in folder 
 - Last modified - add image showing before and after update proving it works 
 - Ratings 
@@ -25,6 +25,19 @@ Installed
 ## UX Testing ? - User experience 
 
 ## Acceptance Testing 
+
+
+
+# technologies used 
+
+- Bootstrap
+- Python 
+- HTML
+- CSS
+- Django
+
+
+# Import
 
 
 
