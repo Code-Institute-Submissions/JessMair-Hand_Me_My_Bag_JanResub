@@ -1,4 +1,12 @@
+# Models
 
+- Description - image in folder 
+- Last modified - add image showing before and after update proving it works 
+- Ratings 
+
+
+Installed 
+- Pillow - for images 
 
 # Testing 
 ## Unit Testing
@@ -12,6 +20,22 @@
 ## UX Testing ? - User experience 
 
 ## Acceptance Testing 
+
+
+
+
+
+
+
+# Credits 
+- https://django-star-ratings.readthedocs.io/en/latest/ - Star ratings for django 
+- https://www.geeksforgeeks.org/django-models/#:~:text=A%20Django%20model%20is%20the,Database%20one%20uses%20with%20Django. - Hep with models, last modified, description and image. 
+
+- https://docs.djangoproject.com/en/4.1/topics/db/models/ - general help with models 
+
+stack overflow 
+
+
 
 
 
