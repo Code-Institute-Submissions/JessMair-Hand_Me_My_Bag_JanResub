@@ -8,6 +8,11 @@
 Installed 
 - Pillow - for images 
 
+
+
+# Changes 
+- Initially I had decided to create a blog with a reiew section. However after speaking with a peer, I was given the idea to create more of a catelogue of bags. Following on from this i decided I will create a star based review system instead. This is as I already have a comments section, so this will provode a different way for a site visitor to interact with the site as not everyone likes to leave a review. This will create more site engagement. 
+
 # Testing 
 ## Unit Testing
 - Comments - Whilst working on the admin panel, I encountered an error with 
