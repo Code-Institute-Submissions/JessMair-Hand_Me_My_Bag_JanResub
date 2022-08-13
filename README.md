@@ -17,6 +17,11 @@ Installed
 ## Unit Testing
 - Comments - Whilst working on the admin panel, I encountered an error with 
 
+
+
+- After I had added the review module, I encountered error with acessing the admin site and the main site. After examining the code and error message, it turned out to be a case of not having used a capital letter. This was fixed and the site (both main and admin) ran without issue. 
+
+
 ## Intergration Testing
 
 ## System Testing 
@@ -36,11 +41,18 @@ Installed
 - CSS
 - Django
 
+# Liabaries 
+- Allauth - account registration 
+
 
 # Import
 
 
 
+
+# Future implementation 
+- Single sign on using allauth 
+- Password reset and account confirmation 
 
 
 
