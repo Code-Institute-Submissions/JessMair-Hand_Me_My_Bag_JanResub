@@ -22,6 +22,12 @@ Installed
 - After I had added the review module, I encountered error with acessing the admin site and the main site. After examining the code and error message, it turned out to be a case of not having used a capital letter. This was fixed and the site (both main and admin) ran without issue. 
 
 
+
+- Leaving comments - error (test2) - after enabling the functionality to leave a comment and press submit. Checked django documentation - mline 49 of views.py file had the attribute of name given instead of "username".
+
+- error flagging once comment is approved through the admin panel. test3 image. 
+how to fix? 
+
 ## Intergration Testing
 
 ## System Testing 
@@ -65,23 +71,5 @@ Installed
 
 stack overflow 
 
+https://docs.djangoproject.com/en/4.1/ref/contrib/auth/#fields - trouble shooting 
 
-
-
-
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
