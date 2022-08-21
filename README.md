@@ -27,6 +27,7 @@ Installed
 
 - error flagging once comment is approved through the admin panel. test3 image. 
 how to fix? 
+line 24 of admin.py file. Thould have said "approved" but had instead typed "approve". This error was fixed. 
 
 ## Intergration Testing
 
