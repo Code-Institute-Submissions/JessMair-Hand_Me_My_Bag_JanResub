@@ -34,7 +34,7 @@ class PostDetail(View):
             },
         )
 
-    def post(self, request, slug, *args, **kwards):
+    def post(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
@@ -70,7 +70,7 @@ class PostDetail(View):
 
 class PostLike(View):
 
-    def post(self, request, slug):
+    def post(self, request, slug, *args, **kwarg):
         post = get_object_or_404(post, slug=slug)
 
         if post.likes.filter(id=request.user.id).exists():
@@ -78,6 +78,6 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
 
-            return HttpResponseRedirect(reverse('post_detail' args=[slug]))
+            return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
 
