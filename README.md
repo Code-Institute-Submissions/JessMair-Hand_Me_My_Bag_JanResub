@@ -74,3 +74,9 @@ stack overflow
 
 https://docs.djangoproject.com/en/4.1/ref/contrib/auth/#fields - trouble shooting 
 
+
+
+## IMAGES 
+- https://mygemma.com/collections/handbags - hero image 
+- https://www.dior.com/en_int/fashion/womens-fashion/bags/saddle?adlgid=c%7Cg%7Cchristian%20dior%20saddlebag%7C611983108215%7Ce&gclid=Cj0KCQjw9ZGYBhCEARIsAEUXITWwFAxI9EhJBTS6RPBiY6z4kTuyWfVLkKlV3RlEJlKaOgYLtnKsHjIaAj1XEALw_wcB - saddle bag images 
+
