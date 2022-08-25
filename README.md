@@ -76,6 +76,7 @@ https://docs.djangoproject.com/en/4.1/ref/contrib/auth/#fields - trouble shootin
 
 pypi.org - review model/app
 
+- https://www.codementor.io/@jadianes/get-started-with-django-building-recommendation-review-app-du107yb1a - help with views for review
 
 
 ## IMAGES 
