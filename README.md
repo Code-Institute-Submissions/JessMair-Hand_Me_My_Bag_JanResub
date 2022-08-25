@@ -82,4 +82,5 @@ pypi.org - review model/app
 ## IMAGES 
 - https://mygemma.com/collections/handbags - hero image 
 - https://www.dior.com/en_int/fashion/womens-fashion/bags/saddle?adlgid=c%7Cg%7Cchristian%20dior%20saddlebag%7C611983108215%7Ce&gclid=Cj0KCQjw9ZGYBhCEARIsAEUXITWwFAxI9EhJBTS6RPBiY6z4kTuyWfVLkKlV3RlEJlKaOgYLtnKsHjIaAj1XEALw_wcB - saddle bag images 
-
+https://www.hermes.com/us/en/story/106191-birkin/ - hermes bag 
+https://bagista.co.uk/products/pre-loved-chanel-classic-flap-bag-small-black-lambskin-cghw?_pos=3&_sid=4054dba54&_ss=r - chanel bag 
