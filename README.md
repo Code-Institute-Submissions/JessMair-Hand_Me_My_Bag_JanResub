@@ -74,6 +74,8 @@ stack overflow
 
 https://docs.djangoproject.com/en/4.1/ref/contrib/auth/#fields - trouble shooting 
 
+pypi.org - review model/app
+
 
 
 ## IMAGES 
