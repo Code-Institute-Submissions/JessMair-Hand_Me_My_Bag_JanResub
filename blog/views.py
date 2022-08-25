@@ -53,9 +53,7 @@ class PostDetail(View):
             comment.save()
         else:
             comment_form = CommentForm()
-
-
-
+            
         return render(
             request,
             "post_detail.html",
