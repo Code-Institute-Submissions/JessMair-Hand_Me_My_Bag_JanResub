@@ -3,6 +3,7 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from .models import Post
 from .forms import CommentForm
+from .models import PostReview
 
 
 
@@ -53,7 +54,7 @@ class PostDetail(View):
             comment.save()
         else:
             comment_form = CommentForm()
-            
+
         return render(
             request,
             "post_detail.html",
@@ -76,3 +77,19 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+class PostReviewList(generic.ListView):
+        model = PostReview
+        queryset = PostReview.objects.all
+        template_name = 'post_deatil.html'
+        paginate_by = 6
+
+class PostReview(View):
+
+    def post(self, request, *args, **kwards):
+        post = get_object_or_404(queryset)
+        reviewed = False
+        if post.reviewed.filter:
+            reviewed = True
+
+        return HttpResponseRedirect(reverse('post_detail', args=[post]))
