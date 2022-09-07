@@ -86,7 +86,7 @@ class PostReviewList(generic.ListView):
 
 class PostReview(View):
 
-    def post(self, request, reviewed, slug, *args, **kwards):
+    def post(self, request, slug, *args, **kwards):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         reviewed = False

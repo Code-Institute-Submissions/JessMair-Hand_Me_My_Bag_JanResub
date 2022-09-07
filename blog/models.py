@@ -44,5 +44,5 @@ class Comment(models.Model):
 
 class PostReview(models.Model):
     rating = models.ManyToManyField(Post)
-    slug = models.SlugField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True, null=True)
     
