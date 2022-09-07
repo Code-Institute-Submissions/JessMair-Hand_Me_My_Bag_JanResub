@@ -1,16 +1,24 @@
 body {
-    background-color: #F9FAFC;
+    background-color: #F1CED4;
 }
 
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
     font-weight: 700;
-    color: pink;
+    color: #391306;
 }
 
 .title {
-    color: pink;
+    color: #391306;
+    
+}
+
+.tagline{
+    color: #710019;
+    font-weight: 400;
+    padding-left: 12.5rem;
+
 }
 
 .thin {
@@ -20,6 +28,7 @@ body {
 .light-bg {
     background-color: #fff;
 }
+
 
 .dark-bg {
     background-color: #445261;
@@ -82,12 +91,12 @@ body {
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #710019;
 }
 
 .post-link:hover,
 .page-link {
-    color: #E84610;
+    color: #710019;
 }
 
 .post-title {
@@ -97,28 +106,28 @@ body {
 
 .post-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: #F1CED4;
 }
 
 .btn-signup {
-    background-color: #23BBBB;
+    background-color: #710019;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #F1CED4;
 }
 
 .link {
-    color: #23BBBB;
+    color: #F1CED4;
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #F7CAC9;
     text-decoration: underline;
 }
 

@@ -10,6 +10,7 @@
                 {% for post in post_list %}
                 <div class="col-md-4">
                     <form method="post" action="{% url 'post-review' slug=post.slug %}">
+                        {% csrf_token %}
                         <p>
                             1= Pass --> 5 = I want it
                         </p>
