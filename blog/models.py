@@ -1,6 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, AbstractBaseUser
 from cloudinary.models import CloudinaryField
+
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -42,7 +43,31 @@ class Comment(models.Model):
     def __str__(self):
         return f"Comment {self.body} by {self.name}" 
 
+
+class CustomStarRating(AbstractBaseUser):
+   object_id = models.UUIDField()
+
 class PostReview(models.Model):
-    rating = models.ManyToManyField(Post)
     slug = models.SlugField(max_length=200, unique=True, null=True)
-    
+    rating = models.IntegerField()
+    rating = (
+        (1,1),
+        (2,2),
+        (3,3),
+        (4,4),
+        (5,5)
+    )
+
+    slug = models.SlugField(max_length=200, unique=True, null=True)
+
+    def __str__(self):
+        return self.post
+
+    def countRating(self):
+        rating = PostReview.objects.filter(
+            status=True
+        ) .aggregate(count=Count('id'))
+        count = 0
+        if rating['count'] is not None:
+            count = int(reviews['count'])
+            return count 

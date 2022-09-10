@@ -78,6 +78,7 @@ pypi.org - review model/app
 
 - https://www.codementor.io/@jadianes/get-started-with-django-building-recommendation-review-app-du107yb1a - help with views for review
 
+slack - star rating - student snippet of code 
 
 ## IMAGES 
 - https://mygemma.com/collections/handbags - hero image 
