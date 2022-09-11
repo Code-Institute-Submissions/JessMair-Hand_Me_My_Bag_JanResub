@@ -7,5 +7,6 @@ class CommentForm (forms.ModelForm):
         model = Comment 
         fields = ('body'),
 
+class PostReview (forms.ModelForm):
     class Meta:
         fields = ['rating']

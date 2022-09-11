@@ -87,13 +87,11 @@ class PostReviewList(generic.ListView):
 class PostReviews(View):
 
     def post(self, request, slug, *args, **kwargs):
-        queryset = Post.objects.set(status=1)
+        queryset = Post.objects.all()
         post = get_object_or_404(Post, slug=slug)
-        rating = PostReview.objects.set(rating=post)
-        messages.success(
-            request, "Your review has been submitted."
-        )
+        rating = PostReview.objects.get(slug=slug)
+    
 
-        return HttpResponseRedirect(reverse('post_detail', args=[post.slug], kwargs={'rating':rating}))
+        return HttpResponseRedirect(reverse('post_detail', args=[post.slug]))
 
         
