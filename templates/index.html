@@ -9,23 +9,6 @@
             <div class="row">
                 {% for post in post_list %}
                 <div class="col-md-4">
-                    <form method="post" action="{% url 'post-review' post.slug %}">
-                        {% csrf_token %}
-                        <p>
-                            1= Pass --> 5 = I want it
-                        </p>
-                        <input type="radio" id="1" name="rating" value="1">
-                        <label for="1">1</label>
-                        <input type="radio" id="2" name="rating" value="2">
-                        <label for="2">2</label>
-                        <input type="radio" id="3" name="rating" value="3">
-                        <label for="3">3</label>
-                        <input type="radio" id="4" name="rating" value="4">
-                        <label for="4">4</label>
-                        <input type="radio" id="5" name="rating" value="5">
-                        <label for="5">5</label>
-                        <button type="submit">Rate The Bag</button> 
-                    </form> 
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">

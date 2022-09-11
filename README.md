@@ -86,6 +86,8 @@ pypi.org - review model/app
 
 slack - star rating - student snippet of code 
 
+https://www.pythonfixing.com/2021/12/fixed-attributeerror-object-has-no_14.html - bug fixing 
+
 ## IMAGES 
 - https://mygemma.com/collections/handbags - hero image 
 - https://www.dior.com/en_int/fashion/womens-fashion/bags/saddle?adlgid=c%7Cg%7Cchristian%20dior%20saddlebag%7C611983108215%7Ce&gclid=Cj0KCQjw9ZGYBhCEARIsAEUXITWwFAxI9EhJBTS6RPBiY6z4kTuyWfVLkKlV3RlEJlKaOgYLtnKsHjIaAj1XEALw_wcB - saddle bag images 
