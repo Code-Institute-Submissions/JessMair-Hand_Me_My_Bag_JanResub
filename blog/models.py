@@ -7,7 +7,6 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 class Post(models.Model):
 
-    
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name="blog_posts")
@@ -19,6 +18,7 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(User, related_name='blog_likes', blank=True)
     description = models.TextField(null=True)
+    
 
     class Meta:
         ordering = ['-created_on']
@@ -32,11 +32,11 @@ class Post(models.Model):
 class Comment(models.Model):
 
     RATING_CHOICES = [
-        (1, 'One'),
-        (2, 'Two'),
-        (3, 'Three'),
-        (4, 'Four'),
-        (5, 'Five'),
+        (1, '1'),
+        (2, '2'),
+        (3, '3'),
+        (4, '4'),
+        (5, '5'),
     ]
 
     post = models.ForeignKey(Post,on_delete=models.CASCADE,related_name='comments')
@@ -45,7 +45,7 @@ class Comment(models.Model):
     body = models.TextField()
     created_on = models.DateTimeField(auto_now_add=True)
     approved = models.BooleanField(default=False)
-    rating = models.CharField(max_length=2,
+    rating = models.IntegerField(
         choices=RATING_CHOICES,
         default=3,)
     

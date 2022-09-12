@@ -93,7 +93,10 @@ https://www.pythonfixing.com/2021/12/fixed-attributeerror-object-has-no_14.html 
 - https://www.dior.com/en_int/fashion/womens-fashion/bags/saddle?adlgid=c%7Cg%7Cchristian%20dior%20saddlebag%7C611983108215%7Ce&gclid=Cj0KCQjw9ZGYBhCEARIsAEUXITWwFAxI9EhJBTS6RPBiY6z4kTuyWfVLkKlV3RlEJlKaOgYLtnKsHjIaAj1XEALw_wcB - saddle bag images 
 https://www.hermes.com/us/en/story/106191-birkin/ - hermes bag 
 https://bagista.co.uk/products/pre-loved-chanel-classic-flap-bag-small-black-lambskin-cghw?_pos=3&_sid=4054dba54&_ss=r - chanel bag 
-
+https://www.matchesfashion.com/products/1498988?country=GBR&utm_source=google&utm_medium=cpc&utm_content=1498988000001&utm_term=1655823569736&gclid=CjwKCAjwsfuYBhAZEiwA5a6CDPBJjQYG3Avv5M3HEtqjgGTFwocmgzcmmW-7IVtliUYhb3_x_TyRXBoCHOMQAvD_BwE&gclsrc=aw.ds - ysl envelope bag
+https://uk.louisvuitton.com/eng-gb/products/speedy-bandouliere-25-bag-nvprod3160026v?gclid=CjwKCAjwsfuYBhAZEiwA5a6CDNxxoGMZv0lEvPgiMFEnMxN0nLX8xEzfTCJ-VZwlq2UPRidYyVfpvRoCEMEQAvD_BwE - lv
+https://www.givenchy.com/gb/en/medium-antigona-bag/3594655629428.html?gclid=CjwKCAjwsfuYBhAZEiwA5a6CDBNxyZJlbJ8W_Wj0KXnYZJvOaM4W4R7a1TwOIbIKuyPTaBLy0DBSFhoCh_0QAvD_BwE&page=cmpid&page=cmpid - givenchy
+https://www.dior.com/en_gb/fashion/products/S0937ONMJ_M41G-lady-dior-chain-pouch - dior pouchette
 
 https://www.canva.com/colors/color-palettes/cherry-blossom-swirl/ - color theory 
 
