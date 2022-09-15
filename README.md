@@ -8,8 +8,9 @@ site link
 - add all others 
 - Description - image in folder 
 - Last modified - add image showing before and after update proving it works 
-- Ratings 
-
+- contact
+- Comments
+- 
 
 Installed 
 - Pillow - for images 
@@ -87,6 +88,8 @@ pypi.org - review model/app
 slack - star rating - student snippet of code 
 
 https://www.pythonfixing.com/2021/12/fixed-attributeerror-object-has-no_14.html - bug fixing 
+
+https://python.plainenglish.io/how-to-create-a-contact-page-for-your-django-website-6b97dddedb2d - contact us form 
 
 ## IMAGES 
 - https://mygemma.com/collections/handbags - hero image 
