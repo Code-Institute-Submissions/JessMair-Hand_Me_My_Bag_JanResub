@@ -1,7 +1,10 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Post
+from django.views.generic import ListView, CreateView, UpdateView, DeleteView
+from django.urls import reverse_lazy
 from .forms import CommentForm
 
 class PostList(generic.ListView):
@@ -63,6 +66,24 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             },
         )
+
+
+class PostUpdate(LoginRequiredMixin, UpdateView):
+    model = CommentForm
+    fields = ['name', 'body', 'rating']
+    
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
+        template_name_suffix = 'post_detail'
+
+
+class PostDelete(DeleteView):
+    model = CommentForm 
+    success_url = reverse_lazy()
+    template_name = 'post_detail.html'
+
+
 
 class PostLike(View):
     

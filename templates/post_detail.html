@@ -62,25 +62,12 @@
             </div>
         </div>
     </div>
+</div>
+<div class="container">
     <div class="row">
         <div class="col">
             <hr>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-8 card mb-4  mt-3 ">
-            <h3>Comments:</h3>
-            
-            {% for comment in comments %}
-            {{ comment.created_on }}
-            <br>
-            {{ comment.body }}
-            <br>
-            {{ comment.rating }}
-            {% endfor %}
-            
-        </div> 
-        
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body">
                 <!-- For later -->
@@ -90,17 +77,42 @@
                 </div>
                 {% else %}
                 {% if user.is_authenticated %}
+                <!-- View comments-->
+                <div class="row">
+                    <div class="col-md-8 card mb-4  mt-3 ">
+                        <h3>Comments...</h3>
+                        {% for comment in comments %}
+                        <strong>
+                            {{ comment.created_on }}
+                        </strong>
+                        {{ comment.name }}
+                        <br>
+                        {{ comment.body }}
+                       <br>
+                       <strong>
+                            {{ comment.rating }}
+                        </strong>
+                        <br>
+                        {% endfor %}
+                    </div>
+                 {% endif %}
+                {% endif %}
 
-                <h3>Leave a comment:</h3>
-                <p>Posting as: {{ user.username }}</p>
-                <form method="post" style="margin-top: 1.3em;">
-                    {{ comment_form | crispy }}
-                    {% csrf_token %}
+                <hr>
+                </div>
+                <!-- Comment form -->
+                <div>
+                    <h3>Leave a comment:</h3>
+                    <p>Posting as: {{ user.username }}</p>
+                    <form method="post" style="margin-top: 1.3em;">
+                        {{ comment_form | crispy }}
+                        {% csrf_token %}
                     <br>
                     <button type="submit" class="btn btn-signup btn-lg">Submit</button>
-                </form>
-                {% endif %}
-                {% endif %}
+                    <button type="submit" class="btn btn-info btn-lg">Edit</button>
+                    <button type="submit" class="btn btn-danger btn-lg">Delete</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

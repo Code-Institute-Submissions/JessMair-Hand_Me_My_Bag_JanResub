@@ -144,3 +144,6 @@ body {
     border: none;
 }
 
+.heroimage {
+    max-height: 40%;
+}

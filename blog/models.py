@@ -1,7 +1,7 @@
 from django.db import models
-from django.contrib.auth.models import User, AbstractBaseUser
+from django.contrib.auth.models import User
+from django.urls import reverse
 from cloudinary.models import CloudinaryField
-
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
@@ -47,3 +47,6 @@ class Comment(models.Model):
     rating = models.IntegerField(
         choices=RATING_CHOICES,
         default=3,)
+
+    def get_absolute_url(self):
+        return reverse('comment-detail', kwargs={'pk': self.pk})
