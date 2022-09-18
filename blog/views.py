@@ -5,7 +5,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Post
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
-from .forms import CommentForm
+from .forms import CommentForm, CommentUpdate, CommentUpdateForm
 
 class PostList(generic.ListView):
     model = Post
@@ -68,17 +68,33 @@ class PostDetail(View):
         )
 
 
-class PostUpdate(LoginRequiredMixin, UpdateView):
-    model = CommentForm
-    fields = ['name', 'body', 'rating']
+    #def update_comment(request, id):
+        #comment = get_object_or_404(Comment, id=id)
+       # form = CommentUpdateForm(request.POST or None, instance=comment)
+        #if request.user != comment.author:
+            #return redirect('post_list')
+            #if form.is_valid():
+            #    form.save()
+ 
+            #return redirect('post_list')
+
+          #  return render(request,'comment/post_detal.html', {'form': form})
+
+
+#class CommentUpdate(LoginRequiredMixin, UpdateView):
+    #model = CommentForm
+   # fields = ['name', 'body', 'rating']
+   # template_name = 'post_detail'
+   # get_success_url = 'comment.id'
+
     
-    def form_valid(self, form):
-        form.instance.author = self.request.user
-        return super().form_valid(form)
-        template_name_suffix = 'post_detail'
+    #def get (self, user, form):
+        #self.object = self.get_object_or_404()
+        #form.instance.author = self.request.user
+        #return super().get(request, *args, **kwargs)
 
 
-class PostDelete(DeleteView):
+class CommentDelete(LoginRequiredMixin, DeleteView):
     model = CommentForm 
     success_url = reverse_lazy()
     template_name = 'post_detail.html'

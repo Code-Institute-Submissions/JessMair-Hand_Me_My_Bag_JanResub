@@ -2,6 +2,7 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
+{% if user.is_authenticated %}
 <h1>Delete Comment</h1>
 <form method="post">{% csrf_token %}
     Are you sure you want to delete "{{ object }}" ?
@@ -9,3 +10,4 @@
 </form>
 
 {% endblock content %}
+
