@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block content %}
+{% load crispy_forms_tags %}
+
+
+<form method="post">  
+    <h1>Update Comment</h1>
+    {{ form.as_p }} 
+    {% csrf_token %}
+    <a href="{% url 'home' %}" type="Submit" class="btn btn-info btn-lg">Submit</a> 
+</form>
+
+{% endblock content %}

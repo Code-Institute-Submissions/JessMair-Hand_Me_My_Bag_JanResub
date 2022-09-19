@@ -1,17 +1,17 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from django.contrib.auth.mixins import LoginRequiredMixin
-from .models import Post
+from .models import Post, Comment
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
-from django.urls import reverse_lazy
-from .forms import CommentForm, CommentUpdate, CommentUpdateForm
+from .forms import CommentForm, CommentUpdateForm
+
 
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
     paginate_by = 6
+
 
 class PostDetail(View):
 
@@ -43,14 +43,13 @@ class PostDetail(View):
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
 
-        
         comment_form = CommentForm(data=request.POST)
 
         if comment_form.is_valid():
             comment_form.instance.email = request.user.email
-            comment_form.instance.name = request.user.username 
+            comment_form.instance.name = request.user.username
             comment = comment_form.save(commit=False)
-            comment.post = post 
+            comment.post = post
             comment.save()
         else:
             comment_form = CommentForm()
@@ -68,41 +67,21 @@ class PostDetail(View):
         )
 
 
-    #def update_comment(request, id):
-        #comment = get_object_or_404(Comment, id=id)
-       # form = CommentUpdateForm(request.POST or None, instance=comment)
-        #if request.user != comment.author:
-            #return redirect('post_list')
-            #if form.is_valid():
-            #    form.save()
- 
-            #return redirect('post_list')
-
-          #  return render(request,'comment/post_detal.html', {'form': form})
+class CommentUpdate(UpdateView):
+    model = Comment
+    fields = ['name', 'body', 'rating']
+    template_name = 'update.html'
+    get_success_url = 'home'
 
 
-#class CommentUpdate(LoginRequiredMixin, UpdateView):
-    #model = CommentForm
-   # fields = ['name', 'body', 'rating']
-   # template_name = 'post_detail'
-   # get_success_url = 'comment.id'
-
-    
-    #def get (self, user, form):
-        #self.object = self.get_object_or_404()
-        #form.instance.author = self.request.user
-        #return super().get(request, *args, **kwargs)
-
-
-class CommentDelete(LoginRequiredMixin, DeleteView):
-    model = CommentForm 
-    success_url = reverse_lazy()
-    template_name = 'post_detail.html'
-
+class CommentDelete(DeleteView):
+    model = Comment
+    template_name = 'comment/commentsmodel_confirm_delete.html'
+    get_success_url = 'home'
 
 
 class PostLike(View):
-    
+
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
@@ -110,4 +89,4 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
 
-        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+            return HttpResponseRedirect(reverse('post_detail', args=[slug]))

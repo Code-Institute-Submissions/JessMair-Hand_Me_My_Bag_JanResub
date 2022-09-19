@@ -58,37 +58,52 @@ The features of this project:
 - Comments from other site visitors displayed 
 - Comments form for registered user to submit 
 - Contact us form for all site visitors to complete and submit 
+- Crud functionality (Create, Read, Update and Delete) - Applied to the comments model
+
 
 # The Structure Plane 
 
 ## Design Thinking 
 ## Blog Features 
+
+- Hero image - Empahsize the type of blog the site is dedicated to. 
+
+<img src="media/heroimage.jpg" alt="hero image">
+
+
 - Navbar - Resposive and navigates to the Home page, Login or Logout, Register and Contact Us
 
-IMAGE
+
+<img src="media/navbar.jpg" alt="navbar">
+
 
 - Site Pagination - Each page displays upto 6 posts 
 
-IMAGE
+<img src="media/pagination1.jpg" alt="paginationnext">
+<img src="media/pagination2.jpg" alt="paginationprev">
 
 - Comments form - Visible under the full post for a logged in user to leave a comment 
 
-IMAGE 
+<img src="media/commentsform.jpg" alt="comments form">
 
-- Previous comments displayed - Displays thoughts left by other site users 
 
-IMAGE 
+- Edit and delete buttons to allow site user to update and delete their own comments
 
+<img src="media/editdelete.jpg" alt="edit and delete buttons">
 
 - Posts - The blog posts have an image of the bag, its name, the date the post was created, and an excerpt. The full post contains teh actual blog about the bag. 
 
-IMAGE 
+<img src="media/posts.jpg" alt="posts">
 
 
 - Contact Us form - A simple form that contains a name, subject and message field to enable even a non registered site visitor to get in touch.
 
-IMAGE 
+<img src="media/contactform.jpg" alt="contact us form"> 
 
+
+- Likes - A small heart which is clear but turns a blush pink colour when the site user clicks on it. 
+
+<img src="media/likes.jpg" alt="Likes">
 
 # The Skeleton Plane 
 
@@ -121,14 +136,11 @@ Here is a link to my [ProjectBoard](https://github.com/users/JessMair/projects/6
 
 # Testing 
 
-- Chrome Developer test
-IMAGE
-- HTML test 
-IMAGE
+- Chrome Developer test - passed. 
 - CSS test 
-IMAGE
-- PEP8 Test 
-IMAGE   
+<img src="media/csscheckjpg" alt="Css validator">   
+- I also completed a HTML test and a PEP8 test. Both passed. 
+
 
 ## Bugs 
 There were a multitude of bugs when developing this project. Below are some example of the bugs I encountered. 
@@ -139,6 +151,8 @@ There were a multitude of bugs when developing this project. Below are some exam
 
 - Error flagging once comment is approved through the admin panel. 
 The issue was on line 24 of admin.py file. Should have said "approved" but i had instead typed "approve". This error was fixed. 
+
+- The images are not resized and displayed appropriately when the blog is opened. This is an error that needed to be fixed. However due to a shortage of time, and it not being the most important thing on the list, this will need to be fixed in the next phase as per agile working methodology. 
 
 
 ## Manual Testing 
