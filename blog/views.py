@@ -4,6 +4,7 @@ from django.http import HttpResponseRedirect
 from .models import Post, Comment
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from .forms import CommentForm, CommentUpdateForm
+from django.urls import reverse_lazy
 
 
 class PostList(generic.ListView):
@@ -69,15 +70,15 @@ class PostDetail(View):
 
 class CommentUpdate(UpdateView):
     model = Comment
-    fields = ['name', 'body', 'rating']
+    form_class = CommentForm
     template_name = 'update.html'
-    get_success_url = 'home'
+    success_url = reverse_lazy("home")
 
 
 class CommentDelete(DeleteView):
     model = Comment
-    template_name = 'comment/commentsmodel_confirm_delete.html'
-    get_success_url = 'home'
+    template_name = 'delete.html'
+    success_url = reverse_lazy("home")
 
 
 class PostLike(View):

@@ -6,7 +6,7 @@
     <h1>Update Comment</h1>
     {{ form.as_p }} 
     {% csrf_token %}
-    <a href="{% url 'home' %}" type="Submit" class="btn btn-info btn-lg">Submit</a> 
+    <button type="submit" class="btn btn-info btn-lg">Submit</button> 
 </form>
 
 {% endblock content %}
