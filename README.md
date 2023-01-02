@@ -4,7 +4,7 @@
 
 
 This is my fourth milestone project, undertaken as part of the Code Institutes Diploma in Software Development.
-Here is the link for [Hand Me My Bag](https://8000-jessmair-handmemybag-cs8jiqmexgn.ws-eu64.gitpod.io/)
+Here is the link for [Hand Me My Bag](https://handmemybag.herokuapp.com/)
 
 #  Who Is This Website For?
 Hand Me My Bag is a dedicated blog site for handbag enthusiasts. The idea behind the blog is to present high end luxury hand bags, yet to share the blog authors opinions of the bag. The site visitors are also wlecomed to engage in the conversation about the bag by leaving their comments and rating of the bag. 
