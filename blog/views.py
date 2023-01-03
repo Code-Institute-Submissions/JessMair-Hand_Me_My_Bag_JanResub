@@ -5,6 +5,7 @@ from .models import Post, Comment
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from .forms import CommentForm, CommentUpdateForm
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class PostList(generic.ListView):
@@ -79,6 +80,19 @@ class CommentDelete(DeleteView):
     model = Comment
     template_name = 'delete.html'
     success_url = reverse_lazy("home")
+
+
+# class MyView(LoginRequiredMixin, UpdateView):
+#     login_url = '/home/'
+#     redirect_field_name = 'sign_in'
+
+class DeleteObjectMixin(object):
+    model = Comment
+    lookup = 
+
+    def get_object(self):
+        return 
+
 
 
 class PostLike(View):

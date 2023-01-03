@@ -56,9 +56,6 @@ INSTALLED_APPS = [
     'blog',
 
     'contact_app.apps.ContactAppConfig',
-
-    
-    
 ]
 
 SITE_ID = 1
@@ -72,7 +69,7 @@ MESSAGE_TAGS = {
         messages.INFO: 'alert-info',
         messages.SUCCESS: 'alert-success',
         messages.WARNING: 'alert-warning',
-        messages.ERROR: 'alert-danger',    
+        messages.ERROR: 'alert-danger',
 }
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
