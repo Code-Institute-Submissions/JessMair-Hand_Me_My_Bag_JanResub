@@ -5,7 +5,9 @@ from .models import Post, Comment
 from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from .forms import CommentForm, CommentUpdateForm
 from django.urls import reverse_lazy
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib import messages
 
 
 class PostList(generic.ListView):
@@ -68,6 +70,13 @@ class PostDetail(View):
             },
         )
 
+class EditView(LoginRequiredMixin, View):
+    login_url = '/index.html/'
+    redirect_field_name = 'home'
+
+    def dispatch(self, request, *args, **kwargs):
+        return super().dispatch(request, *args, **kwargs)
+
 
 class CommentUpdate(UpdateView):
     model = Comment
@@ -80,19 +89,6 @@ class CommentDelete(DeleteView):
     model = Comment
     template_name = 'delete.html'
     success_url = reverse_lazy("home")
-
-
-# class MyView(LoginRequiredMixin, UpdateView):
-#     login_url = '/home/'
-#     redirect_field_name = 'sign_in'
-
-class DeleteObjectMixin(object):
-    model = Comment
-    lookup = 
-
-    def get_object(self):
-        return 
-
 
 
 class PostLike(View):

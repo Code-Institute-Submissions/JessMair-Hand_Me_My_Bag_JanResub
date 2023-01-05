@@ -24,4 +24,5 @@ urlpatterns = [
     path('', include('blog.urls'), name='blog_urls'),
     path('accounts/', include('allauth.urls')),
     path('contact/', include('contact_app.urls')),
+    path('editview/', views.EditView.as_view(), name='editview'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
