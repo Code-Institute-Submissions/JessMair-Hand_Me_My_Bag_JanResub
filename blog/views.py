@@ -1,13 +1,14 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.auth import authenticate, login, logout
+from django.contrib import messages
 from .models import Post, Comment
-from django.views.generic import ListView, CreateView, UpdateView, DeleteView
 from .forms import CommentForm, CommentUpdateForm
 from django.urls import reverse_lazy
-from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib import messages
+
 
 
 class PostList(generic.ListView):
@@ -70,25 +71,33 @@ class PostDetail(View):
             },
         )
 
-class EditView(LoginRequiredMixin, View):
-    login_url = '/index.html/'
-    redirect_field_name = 'home'
-
-    def dispatch(self, request, *args, **kwargs):
-        return super().dispatch(request, *args, **kwargs)
-
-
-class CommentUpdate(UpdateView):
+class CommentUpdate(LoginRequiredMixin, UpdateView):
     model = Comment
     form_class = CommentForm
     template_name = 'update.html'
     success_url = reverse_lazy("home")
 
+    def form_valid(self, form):
+        comment_form = form.save(commit=False)
+        comment_form.author = self.request.user
+        form.save()
+        return super().form_valid(form)
 
-class CommentDelete(DeleteView):
+        def get(self, request, *args, **kwargs):
+            obj = self.get_object()
+            if obj.author != request.user:
+                return redirect('comments:list')
+                context = self.get_context_data(object=obj)
+                return self.render_to_response(context)
+
+class CommentDelete(LoginRequiredMixin, DeleteView):
     model = Comment
     template_name = 'delete.html'
     success_url = reverse_lazy("home")
+
+    def form_valid(self, form):
+        form.instance.author = self.request.user 
+        return super().form_valid(form)
 
 
 class PostLike(View):
