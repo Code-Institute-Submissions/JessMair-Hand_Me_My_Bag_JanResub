@@ -10,11 +10,11 @@ def contact(request):
     if request.method == "POST":
         contact = Contact()
         name = request.POST.get('name')
-        subject = request.POST.get('subject')
+        email = request.POST.get('email')
         message = request.POST.get('message')
 
         contact.name = name
-        contact.subject = subject
+        contact.email = email
         contact.message = message
         contact.save()
         
