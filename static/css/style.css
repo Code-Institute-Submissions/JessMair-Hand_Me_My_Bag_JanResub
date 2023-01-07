@@ -45,7 +45,27 @@ body {
 
 .image-container {
     position: relative;
-}
+  }
+  .text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    padding: 20px;
+    text-align: center;
+  }
+
+<div class="image-container">
+  <img src="{{ image_url }}" alt="My Image">
+  <div class="text-box">
+    <p>This is a text box on top of an image.</p>
+  </div>
+</div>
 
 .image-flash {
     position: absolute;

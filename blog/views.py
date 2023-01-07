@@ -53,6 +53,7 @@ class PostDetail(View):
         if comment_form.is_valid():
             comment_form.instance.email = request.user.email
             comment_form.instance.name = request.user.username
+            comment_form.instance.author = request.user
             comment = comment_form.save(commit=False)
             comment.post = post
             comment.save()
@@ -77,27 +78,20 @@ class CommentUpdate(LoginRequiredMixin, UpdateView):
     template_name = 'update.html'
     success_url = reverse_lazy("home")
 
-    def form_valid(self, form):
-        comment_form = form.save(commit=False)
-        comment_form.author = self.request.user
-        form.save()
-        return super().form_valid(form)
-
-        def get(self, request, *args, **kwargs):
-            obj = self.get_object()
-            if obj.author != request.user:
-                return redirect('comments:list')
-                context = self.get_context_data(object=obj)
-                return self.render_to_response(context)
+    def get_queryset(self, *args, **kwargs):
+        return super().get_queryset(*args, **kwargs).filter(
+            author=self.request.user
+        )
 
 class CommentDelete(LoginRequiredMixin, DeleteView):
     model = Comment
     template_name = 'delete.html'
     success_url = reverse_lazy("home")
 
-    def form_valid(self, form):
-        form.instance.author = self.request.user 
-        return super().form_valid(form)
+    def get_queryset(self, *args, **kwargs):
+        return super().get_queryset(*args, **kwargs).filter(
+            author=self.request.user
+        )
 
 
 class PostLike(View):
