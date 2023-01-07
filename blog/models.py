@@ -1,3 +1,4 @@
+""" Here are two Django models. 'Post' and 'Comment' """
 from django.db import models
 from django.contrib.auth.models import User
 from django.urls import reverse
@@ -7,7 +8,7 @@ STATUS = ((0, "Draft"), (1, "Published"))
 
 
 class Post(models.Model):
-
+    """ This is Django model for the blog post """
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
@@ -22,16 +23,22 @@ class Post(models.Model):
     description = models.TextField(null=True)
 
     class Meta:
+        """ This orders the posts based on when they were created.
+        The newest posts will be at the top """
         ordering = ['-created_on']
 
     def __str__(self):
+        """ Returns title field of post as a string """
         return self.title
 
     def number_of_likes(self):
+        """ Counts and displays the number of likes post has received """
         return self.likes.count()
 
 
 class Comment(models.Model):
+    """" Django comment model, with a ratings field to act as a significant
+    customisation of the model """
 
     RATING_CHOICES = [
         (1, '1'),
@@ -54,4 +61,6 @@ class Comment(models.Model):
         default=3,)
 
     def get_absolute_url(self):
+        """ Custom model to return URL which redirects user to detail page
+        of the comment """
         return reverse('comment-detail', kwargs={'pk': self.pk})

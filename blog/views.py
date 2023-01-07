@@ -1,17 +1,17 @@
+""" This is a view for the blog which is an app of the site.
+Class-based views have been used """
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+from django.views.generic import UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
-from django.contrib.auth import authenticate, login, logout
-from django.contrib import messages
-from .models import Post, Comment
-from .forms import CommentForm, CommentUpdateForm
 from django.urls import reverse_lazy
-
+from .models import Post, Comment
+from .forms import CommentForm
 
 
 class PostList(generic.ListView):
+    """ This class is to display a list of blog posts """
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
     template_name = 'index.html'
@@ -19,8 +19,10 @@ class PostList(generic.ListView):
 
 
 class PostDetail(View):
-
-    def get(self, request, slug, *args, **kwargs):
+    """ This is a view to display the details of the blog post.
+    This function will retrieve all approved data from the database."""
+    def get(self, request, slug):
+        """ This function uses the GET method and handles HTTP GET requests """
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
@@ -40,7 +42,8 @@ class PostDetail(View):
             },
         )
 
-    def post(self, request, slug, *args, **kwargs):
+    def post(self, request, slug):
+        """ Using the POST method to handle HTTP POST requests """
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
@@ -69,10 +72,12 @@ class PostDetail(View):
                 "commented": True,
                 "liked": liked,
                 "comment_form": CommentForm()
-            },
+            }
         )
 
+
 class CommentUpdate(LoginRequiredMixin, UpdateView):
+    """ This view will handle updating comments """
     model = Comment
     form_class = CommentForm
     template_name = 'update.html'
@@ -83,7 +88,9 @@ class CommentUpdate(LoginRequiredMixin, UpdateView):
             author=self.request.user
         )
 
+
 class CommentDelete(LoginRequiredMixin, DeleteView):
+    """ This view takes care of deleting a comment """
     model = Comment
     template_name = 'delete.html'
     success_url = reverse_lazy("home")
@@ -95,8 +102,9 @@ class CommentDelete(LoginRequiredMixin, DeleteView):
 
 
 class PostLike(View):
-
-    def post(self, request, slug, *args, **kwargs):
+    """ This view handles 'liking' and 'unliking' a blog post """
+    def post(self, request, slug):
+        """ Here the POST method is being used """
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
             post.likes.remove(request.user)
