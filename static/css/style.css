@@ -140,6 +140,28 @@ body {
     color: #F1CED4;
 }
 
+.btn-edit {
+    background-color: #f9ccd3;
+    color: #fff;
+}
+
+.btn-edit:hover,
+.btn-edit:active {
+    background-color: #fff;
+    color: #391306;
+}
+
+.btn-delete {
+    background-color: #391306;
+    color: #fff;
+}
+
+.btn-delete:hover,
+.btn-delete:active {
+    background-color: #fff;
+    color: #F1CED4;
+}
+
 .link {
     color: #F1CED4;
     text-decoration: none;
