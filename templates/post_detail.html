@@ -93,8 +93,8 @@
                         </strong>
                         <br>
                         {% if user.is_authenticated and comment.author == user %}
-                        <a href="{% url 'comment_update' comment.pk %}" type="Edit" class="btn btn-edit btn-lg">Edit</a>
-                        <a href="{% url 'comment_delete' comment.pk %}"  type="Delete" class="btn btn-delete btn-lg">Delete</a>
+                        <a href="{% url 'comment_update' comment.pk %}" type="Edit" class="btn btn-edit btn-sm">Edit</a>
+                        <a href="{% url 'comment_delete' comment.pk %}"  type="Delete" class="btn btn-delete btn-sm">Delete</a>
                         </div>
                         {% endif %}
                  {% endfor %}

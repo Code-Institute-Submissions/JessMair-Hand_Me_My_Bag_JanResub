@@ -37,7 +37,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Bag Reviews</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -58,7 +58,7 @@
             </div>
         </div>
     </nav>
-
+<!-- Alert message when actions are completed -->
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
@@ -74,8 +74,8 @@
 
     <!-- Hero image under navbar -->
 
-    <div class="w3-display-container">
-        <img src="{{ MEDIA_URL }}heroimage.jpg"alt="bags" style="width:50%">
+    <div class="w3-display-container text-center">
+        <img src="{{ MEDIA_URL }}heroimage.jpg"alt="bags" style="width:65%">
     </div>
 
     <main class="flex-shrink-0 main-bg">

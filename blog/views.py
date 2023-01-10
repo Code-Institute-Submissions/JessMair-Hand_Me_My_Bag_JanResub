@@ -92,7 +92,6 @@ class CommentUpdate(LoginRequiredMixin, UpdateView):
         form.instance.approved = False
         form.save()
         return super().form_valid(form)
-    
 
 
 class CommentDelete(LoginRequiredMixin, DeleteView):
