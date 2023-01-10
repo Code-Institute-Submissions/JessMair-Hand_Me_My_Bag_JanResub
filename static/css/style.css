@@ -167,13 +167,3 @@ body {
 .heroimage {
     max-height: 40%;
 }
-
-.btn-register {
-    background-color: #710019;
-    color: #fff;
-}
-
-.btn-register:hover,
-.btn-register:active {
-    background-color: #fff;
-    color: #F1CED4;
