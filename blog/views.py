@@ -88,6 +88,12 @@ class CommentUpdate(LoginRequiredMixin, UpdateView):
             author=self.request.user
         )
 
+    def form_valid(self, form):
+        form.instance.approved = False
+        form.save()
+        return super().form_valid(form)
+    
+
 
 class CommentDelete(LoginRequiredMixin, DeleteView):
     """ This view takes care of deleting a comment """
