@@ -308,6 +308,10 @@ It should say that django installed successfully.
 
 - Contact form https://python.plainenglish.io/how-to-create-a-contact-page-for-your-django-website-6b97dddedb2d 
 
+- https://docs.djangoproject.com/en/4.0/ref/contrib/messages/#adding-messages-in-class-based-views
+- https://stackoverflow.com/questions/24822509/success-message-in-deleteview-not-shown/25325228#25325228 - Used both to enable delete success message to display on home page 
+
+- https://www.youtube.com/watch?v=pOXqvzVCeSM - Implemented update success message using this tutorial 
 
 ## Honourable mentions 
 

@@ -1,5 +1,8 @@
+/* Main body of site */
 body {
     background-color: #F1CED4;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Blog title */
@@ -8,6 +11,10 @@ body {
     font-size: 5rem;
     font-weight: 700;
     color: #391306;
+}
+
+.navbar-brand {
+    white-space: normal;
 }
 
 .title {
@@ -19,13 +26,12 @@ body {
 .tagline{
     color: #710019;
     font-weight: 500;
-    padding-left: 12.5rem;
     text-align: center;
 
 }
 
 .thin {
-    font-weight: 400;
+    font-weight: 2rem;
 }
 
 .light-bg {
@@ -46,7 +52,7 @@ body {
     background-color: transparent;
 }
 
-/* Post header */
+/* Post masthead/header */
 .image-container {
     position: relative;
   }
@@ -88,7 +94,6 @@ body {
     position: relative;
     overflow: hidden;
     object-fit: cover;
-    height: 33vh;
 }
 
 .masthead-image:after {
@@ -105,6 +110,7 @@ body {
     z-index: 100;
 }
 
+/* Post title CSS */
 .post-link {
     text-decoration: none;
     color: #710019;
@@ -112,7 +118,7 @@ body {
 
 .post-link:hover,
 .page-link {
-    color: #710019;
+    color: #445261;
 }
 
 .post-title {
@@ -125,6 +131,7 @@ body {
     color: #F1CED4;
 }
 
+/* Register button */
 .btn-signup {
     background-color: #710019;
     color: #fff;
@@ -136,9 +143,11 @@ body {
     color: #F1CED4;
 }
 
+/* Edit button */
 .btn-edit {
     background-color: #f9ccd3;
     color: #fff;
+    max-width: 80px;
 }
 
 .btn-edit:hover,
@@ -147,9 +156,11 @@ body {
     color: #391306;
 }
 
+/* Delete button */
 .btn-delete {
     background-color: #391306;
     color: #fff;
+    max-width: 80px;
 }
 
 .btn-delete:hover,
@@ -169,6 +180,7 @@ body {
     text-decoration: underline;
 }
 
+/* CSS for the like button */
 .btn-like {
     color: #F7CAC9;
     border: none;
