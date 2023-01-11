@@ -74,10 +74,7 @@ body {
 
 .masthead {
     margin-top: 10px;
-    overflow: hidden;
-    position: relative;
     display: inline-block;
-    height: 33vh;
     width: 100%;
 }
 
@@ -90,6 +87,8 @@ body {
 .masthead-image {
     position: relative;
     overflow: hidden;
+    object-fit: cover;
+    height: 33vh;
 }
 
 .masthead-image:after {
