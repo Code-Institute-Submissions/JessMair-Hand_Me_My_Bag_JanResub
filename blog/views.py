@@ -5,7 +5,9 @@ from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.views.generic import UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.contrib.messages.views import SuccessMessageMixin
 from django.urls import reverse_lazy
+from django.contrib import messages
 from .models import Post, Comment
 from .forms import CommentForm
 
@@ -76,7 +78,7 @@ class PostDetail(View):
         )
 
 
-class CommentUpdate(LoginRequiredMixin, UpdateView):
+class CommentUpdate(LoginRequiredMixin, SuccessMessageMixin, UpdateView):
     """ This view will handle updating comments """
     model = Comment
     form_class = CommentForm
@@ -93,17 +95,30 @@ class CommentUpdate(LoginRequiredMixin, UpdateView):
         form.save()
         return super().form_valid(form)
 
+    def get_success_message(self, cleaned_data):
+        print(cleaned_data)
+        return "Your edited comment is awaiting approval"
 
-class CommentDelete(LoginRequiredMixin, DeleteView):
+
+class CommentDelete(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
     """ This view takes care of deleting a comment """
     model = Comment
     template_name = 'delete.html'
     success_url = reverse_lazy("home")
+    success_message = "Your comment has been successfully deleted"
 
     def get_queryset(self, *args, **kwargs):
         return super().get_queryset(*args, **kwargs).filter(
             author=self.request.user
         )
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(CommentDelete, self).delete(request, *args, **kwargs)
+
+    # def get_success_message(self, cleaned_data):
+    #     print(cleaned_data)
+    #     return "Your comment has been successfully deleted"
 
 
 class PostLike(View):

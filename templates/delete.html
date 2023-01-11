@@ -1,9 +1,20 @@
 {% extends 'base.html' %} {% block content %}
 {% load crispy_forms_tags %}
 
-<form method="post">{% csrf_token %}
+
+<form method="post">
+    {% csrf_token %}
     <p>Are you sure you want to delete your comment?</p>
+    <div class="col-md-4 card mb-4  mt-3 ">
+        <div class="card-body">
+            {% if messages %}
+                 </div class='alert alert-warning'>
+                 {% for message in messages %}
+                     {{ message }} <br/>
+                </div>
+                {% endfor %}
+            {% endif %}
     <input type="submit" value="Confirm" class= "btn btn-signup btn-lg" >
-    </form>
+</form>
 {% endblock content %}
 
