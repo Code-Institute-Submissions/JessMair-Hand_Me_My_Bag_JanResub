@@ -22,14 +22,23 @@
 
 <body class="d-flex flex-column h-100 main-bg">
 
+<!-- topnavbar -->
+    <nav class="navbar navbar-dark dark-bg">
+    <!-- Navbar content -->
+    </nav>
+
+
     <!-- Navigation -->
 
+    <div>
+        <a class="navbar-brand" href="{% url 'home' %}"><h1 class="title"><span><strong>HAND</strong></span>
+        <span> me my</span><span class="bag"><strong> BAG!!</strong></span></h1>
+        <h6 class="tagline">All Bagaholics Welcome</h6>
+        </a>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><h1 class="title"><span><strong>HAND</strong></span>
-                <span> me my</span><span class="bag"><strong> BAG!!</strong></span></h1>
-                <h6 class="tagline">All Bagaholics Welcome</h6>
-            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -37,7 +46,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Bag Reviews</a>
+                        <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     {% if user.is_authenticated %}
                     <li class="nav-item">
@@ -72,11 +81,6 @@
         </div>
     </div>
 
-    <!-- Hero image under navbar -->
-
-    <div class="w3-display-container text-center">
-        <img src="{{ MEDIA_URL }}heroimage.jpg"alt="bags" style="width:65%">
-    </div>
 
     <main class="flex-shrink-0 main-bg">
         {% block content %}
