@@ -1,6 +1,6 @@
 # Hand Me My Bag - A Django Project
 
-<img src="media/amiresponsive.jpg" alt="Responsive Site Image">
+<img src="media/amiresponsive.png" alt="Responsive Site Image">
 
 
 This is my fourth milestone project, undertaken as part of the Code Institutes Diploma in Software Development.
@@ -59,6 +59,7 @@ The features of this project:
 - Comments form for registered user to submit 
 - Contact us form for all site visitors to complete and submit 
 - Crud functionality (Create, Read, Update and Delete) - Applied to the comments model
+- Success messages (Sucessfully register, login, logout, update comment, delete comment or post comment)
 
 
 # The Structure Plane 
@@ -66,44 +67,104 @@ The features of this project:
 ## Design Thinking 
 ## Blog Features 
 
-- Hero image - Empahsize the type of blog the site is dedicated to. 
+- Title header - Empahsize the blog name with a tagline attached that quickly clarifies that it is a blog dedicated to luxury handbags. 
 
-<img src="media/heroimage.jpg" alt="hero image">
+<img src="media/headnavbar.png" alt="hero image">
 
 
 - Navbar - Resposive and navigates to the Home page, Login or Logout, Register and Contact Us
 
 
-<img src="media/navbar.jpg" alt="navbar">
+<img src="media/navbar.png" alt="navbar">
 
+- Home page 
+
+<img src="media/homepage.png" alt="homepage">
+
+
+- Register, Login and Logout
+
+<img src="media/registerpage.png" alt="register">
+<img src="media/signinpage.png" alt="signin">
+<img src="media/logoutmessage.png" alt="logout">
+
+All button change colour when hovered over
+
+<img src="media/duringhover.png" alt="hover">
 
 - Site Pagination - Each page displays upto 6 posts 
 
-<img src="media/pagination1.jpg" alt="paginationnext">
-<img src="media/pagination2.jpg" alt="paginationprev">
+<img src="media/pagination1.png" alt="paginationnext">
+<img src="media/pagination2.png" alt="paginationprev">
 
 - Comments form - Visible under the full post for a logged in user to leave a comment 
 
-<img src="media/commentsform.jpg" alt="comments form">
+<img src="media/commentform.png" alt="comments form">
+
+- Comments section for users who are not logged in. The form to input data does not display, instead they are given a link to follow to sign in. 
+
+<img src="media/commentssection.png" alt="comments">
 
 
 - Edit and delete buttons to allow site user to update and delete their own comments
 
-<img src="media/editdelete.jpg" alt="edit and delete buttons">
+<img src="media/editdelete.png" alt="edit and delete buttons">
+
+- Process of updating a comment 
+The User can update their comment and the rating which they have given. 
+They can also delete their comments too and are asked to confirm this option. 
+The comments whether new or upodated are approved or disapproved in the admin panel. 
+
+<img src="media/udcprocess.png" alt="comment">
+
+<img src="media/deleteconfirm.png" alt="deletecomment">
+
+<img src="media/adminpage.png" alt="admin">
 
 - Posts - The blog posts have an image of the bag, its name, the date the post was created, and an excerpt. The full post contains teh actual blog about the bag. 
 
-<img src="media/posts.jpg" alt="posts">
+<img src="media/postouter.png" alt="posts">
+
+- Postimagery when opened 
+
+<img src="media/postpage.png" alt="post">
 
 
 - Contact Us form - A simple form that contains a name, subject and message field to enable even a non registered site visitor to get in touch.
 
-<img src="media/contactform.jpg" alt="contact us form"> 
+<img src="media/contactpage.png" alt="contact us form"> 
 
 
 - Likes - A small heart which is clear but turns a blush pink colour when the site user clicks on it. 
 
 <img src="media/likes.jpg" alt="Likes">
+
+- Favicon 
+I decided to use a premade favicon of a habdbag. I wanted something bright that would stand out on the tab bar. 
+
+<img src="media/tabfavicon.png" alt="favicon"> 
+
+- Success messages 
+
+When an authorised User posts a comment, they will get this message:
+
+<img src="media/commentapproval.png" alt="message"> 
+
+When an authorised User wants to delete their own comment, they will see this message:
+
+<img src="media/deletesuccess.png" alt="message"> 
+
+When an authorised User wants to login or register, they will see this message:
+
+<img src="media/loginsuccess.png" alt="message"> 
+
+When an authorised User wants to logout, they will see this message:
+
+<img src="media/logoutsuccess.png" alt="message"> 
+
+When an authorised User wants to update their own comment, they will see this message:
+
+<img src="media/updatesuccess.png" alt="message"> 
 
 # The Skeleton Plane 
 
@@ -294,6 +355,7 @@ It should say that django installed successfully.
 - [Geeks For Geeks](www.geeksforgeeks.org) Research and fix errors 
 - [Canva](https://www.canva.com/colors/color-palettes/cherry-blossom-swirl/) Colour theory
 - [ChatGPT]{https://chat.openai.com/chat} - Elaborate blog content
+- [Favicon](https://icons8.com/icons/set/handbag) - Handbag favicon
 
 
 # Credits 
