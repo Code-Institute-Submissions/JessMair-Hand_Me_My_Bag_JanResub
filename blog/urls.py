@@ -1,7 +1,5 @@
 from django.urls import path
 from . import views
-from .views import UpdateView
-from django.views.generic.edit import DeleteView
 
 urlpatterns = [
     path('', views.PostList.as_view(), name='home'),

@@ -116,10 +116,6 @@ class CommentDelete(LoginRequiredMixin, SuccessMessageMixin, DeleteView):
         messages.success(self.request, self.success_message)
         return super(CommentDelete, self).delete(request, *args, **kwargs)
 
-    # def get_success_message(self, cleaned_data):
-    #     print(cleaned_data)
-    #     return "Your comment has been successfully deleted"
-
 
 class PostLike(View):
     """ This view handles 'liking' and 'unliking' a blog post """

@@ -1,3 +1,4 @@
+# This file holds settings an functions that display on the admin site
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
 from .models import Post, Comment
@@ -21,5 +22,5 @@ class CommentAdmin(admin.ModelAdmin):
     search_fields = ('name', 'email', 'body')
     actions = ['approve_comments']
 
-    def approve_comments(self, request, queryset):
+    def approve_comments(self, queryset):
         queryset.update(approved=True)
