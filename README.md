@@ -293,6 +293,7 @@ It should say that django installed successfully.
 - [Stack Overflow](https://stackoverflow.com/) To troubleshoot many times when experincing issues  
 - [Geeks For Geeks](www.geeksforgeeks.org) Research and fix errors 
 - [Canva](https://www.canva.com/colors/color-palettes/cherry-blossom-swirl/) Colour theory
+- [ChatGPT]{https://chat.openai.com/chat} - Elaborate blog content
 
 
 # Credits 

@@ -1,3 +1,4 @@
+""" URL pathways for features and functions of the site """
 from django.urls import path
 from . import views
 

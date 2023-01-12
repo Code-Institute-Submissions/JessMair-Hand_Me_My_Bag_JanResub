@@ -1,12 +1,19 @@
+""" View file for the contact app """
 from django.shortcuts import render
 from .models import Contact
 
-# Create your views here.
 
 def index(request):
+    """
+    Direct view to render instruction held in the index template
+    """
     return render(request, 'index.html')
 
+
 def contact(request):
+    """
+    View of contact form
+    """
     if request.method == "POST":
         contact = Contact()
         name = request.POST.get('name')
@@ -17,5 +24,5 @@ def contact(request):
         contact.email = email
         contact.message = message
         contact.save()
-        
+
     return render(request, 'contact.html')
