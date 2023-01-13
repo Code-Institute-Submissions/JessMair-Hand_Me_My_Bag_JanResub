@@ -26,7 +26,49 @@ The project was planned in 5 stages.
 - Surface Plane 
 
 ## The Strategy Plane 
+
+## User Persona
+
+This website is targetted predominately towards women and some men who are luxury handbag enthusiasts. 
+
+The main focus of this site has been to provide a clean aesthetic to the site, with ease of navigation.
+The site has been designed to be responsive when displayed on different size devices. 
+
+## User Goals 
+### Unregistered
+- View the posts on the website 
+- Send a message to the site admin
+
+### Registered - The above and...
+- Like posts
+- Create and View own comment on the post 
+- Update and Delete own comment on the post  
+- Leave, View, Edit or Delete own rating on a post
+
+
+## Site Owner Goals
+- Create, View, Update and Delete posts
+- Approve or Disapprove comments/ratings from users
+- Delete comments/ratings on the site
+- Have a site that is easy and smooth to navigate and learn so that viewers will return in the future to view and engage in more content. 
+
+## User Requirements and Expectations 
+### Requirement
+- Easy to navigate 
+- Content on post are relavant to the purposeof the blog
+- Aesthetically appealing website
+- Easy to locate interactive features of the site such as "logout". 
+
+
+### Expectations 
+
+
 ## User Stories
+
+### Unregistered User
+
+
+### Registered User
 -   As a user I want to be able to register an account with the blog site
 -   As a user I want account registration to be a quick process
 -   As a user I want to be able to open posts
@@ -38,7 +80,7 @@ The project was planned in 5 stages.
 -   As a user I do not want the site to be cluttered or have any information that does not serve the blogs purpose. 
 -   As a user I want the site to be easy to learn so that when I return in the future.
 
-## The Owner 
+## Site Admin 
 
 -   Owner should be able to create, display, update and delete post
 -   Owner Should be able to approve or disapporove comments
@@ -65,19 +107,20 @@ The features of this project:
 # The Structure Plane 
 
 ## Design Thinking 
-## Blog Features 
+Here the features and functions of the site are detailed. I have tried to keep the design as uniform and consistenet where possible 
+### Blog Features 
 
-- Title header - Empahsize the blog name with a tagline attached that quickly clarifies that it is a blog dedicated to luxury handbags. 
+- Title header - Empahsize the blog name with a tagline attached that quickly clarifies that it is a blog dedicated to luxury handbags. The title is also responsive. 
 
 <img src="media/headnavbar.png" alt="hero image">
 
 
-- Navbar - Resposive and navigates to the Home page, Login or Logout, Register and Contact Us
+- Navbar - Resposive and navigates to the Home page, Login or Logout, Register and Contact Us pages. 
 
 
 <img src="media/navbar.png" alt="navbar">
 
-- Home page 
+- Home page - This is the landing page. I have tried to keep the site clean and free from over congestion of images or words. The idea behind this is for the page to present as visually appealing to the site user. 
 
 <img src="media/homepage.png" alt="homepage">
 
@@ -88,7 +131,7 @@ The features of this project:
 <img src="media/signinpage.png" alt="signin">
 <img src="media/logoutmessage.png" alt="logout">
 
-All button change colour when hovered over
+All button change colour when hovered over with a mouse.
 
 <img src="media/duringhover.png" alt="hover">
 
@@ -101,12 +144,12 @@ All button change colour when hovered over
 
 <img src="media/commentform.png" alt="comments form">
 
-- Comments section for users who are not logged in. The form to input data does not display, instead they are given a link to follow to sign in. 
+- Comments section for users who are not logged in will not diplay the form to input. Instead they are given a link to follow to sign in. 
 
 <img src="media/commentssection.png" alt="comments">
 
 
-- Edit and delete buttons to allow site user to update and delete their own comments
+- Edit and delete buttons to allow site user to update and delete their own comments only. 
 
 <img src="media/editdelete.png" alt="edit and delete buttons">
 
@@ -198,9 +241,9 @@ Here is a link to my [ProjectBoard](https://github.com/users/JessMair/projects/6
 # Testing 
 
 - Chrome Developer test - passed. 
-- CSS test 
-<img src="media/csscheckjpg" alt="Css validator">   
-- I also completed a HTML test and a PEP8 test. Both passed. 
+- CSS test   
+- I also completed a HTML test - passed
+- [CI Python Linter](https://pep8ci.herokuapp.com/) 
 
 
 ## Bugs 
