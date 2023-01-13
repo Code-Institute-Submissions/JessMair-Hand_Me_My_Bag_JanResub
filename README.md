@@ -217,7 +217,7 @@ Below is a link to the original wireframe I had completed
 
 [wireframe3](media/wireframe3.jpg)
 
-I made some tweaks along the way but was able to implement most of what I had planned out originally. 
+I made some changes towards the end in the interest of a blog that looks cleaner. I removed the hero image and instead opted to enlarge the blog title with the tagline in it's place and have the navbar sit directly below. This hange was mirrored throughout all the pages of the site. The rest of the design has remained consistent with what was orginally planned.  
 
 # Surface Plane 
 ## Design Tools / Colour Palette
