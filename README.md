@@ -34,11 +34,13 @@ The site has been designed to be responsive when displayed on different size dev
 
 ## User Goals 
 ### Unregistered
+- Be able to navigate the site easily 
 - View the posts on the website 
 - Send a message to the site admin
 
 ### Registered (the above and plus+)
-- Like posts
+- Be able to register quickly and easily 
+- Like posts and unlike posts
 - Create and View own comment on the post 
 - Update and Delete own comment on the post  
 - Leave, View, Edit or Delete own rating on a post
@@ -86,11 +88,113 @@ These stories have been assigned Low, Medium, or High next to the story to clari
 -   Owner should be able to create, display, update and delete post - High
 -   Owner Should be able to approve or delete all comments, whether new or previous - High
 -   Owner should be able to retrieve the details of the contact us form submitted by site visitors - Medium
--   Owner should be able to retrieve messages sent via contact us form - Low
+
 
 ## Agile Methodology 
 - This application was developed using Agile Methodology. The design and implementation was planned based on user stories and a project board. This project board has a series of user stories that were split into 3 categories: to-do, in progress or done. This project board was made using GitHub projects. When working with agile as methodology, priority is given to the most important aspect of the project and therefore the scope is limited based in the amount of time one has as quality of the development needs to be maintained. There were features I was not able to implement, I have listed them under "future implementation" in the read me.
 Here is a link to my [ProjectBoard](https://github.com/users/JessMair/projects/6/views/1)
+
+### User stories against user goals to be achieve. 
+
+
+As a site user;
+
+**Story**: As a user I want the site to be easy to navigate
+
+**Goal**: Be able to navigate the site easily 
+
+*Priority*: Medium 
+
+
+**Story**: As a user I want to be able to open and view posts
+
+**Goal**: View the posts on the website
+
+*Priority*: High
+
+
+**Story**: As a user I want to view other site visitors’ comments
+
+**Goal**: Create and View own comment on the post
+
+*Priority*: Medium
+
+
+**Story**: As a user I want to be able to register an account with the site and for this process to be easy
+
+**Goal**: Be able to register quickly and easily 
+
+*Priority*: High
+
+
+**Story**: As a user I want to be able to send a message to the site owner
+
+**Goal**: Send a message to the site admin
+
+*Priority*: Low
+
+
+**Story**: As a user I want to be able to like and unlike posts
+
+**Goal**: Like and unlike posts
+
+*Priority*: Low
+
+
+**Story**: As a user I want to be able to leave, update and delete my own comments 
+
+**Goal**: 1. Create and View own comment on the post
+
+      2. Update and Delete own comment on the post
+
+*Priority*: High
+
+
+**Story**: As a user I want to be able to leave a rating review of the post/bag
+
+**Goal**: Leave, View, Edit or Delete own rating on a post
+
+*Priority*: Low
+
+
+**Story**: As a user I want the site to be clutter free and only contain information that serves the blogs purpose
+
+**Goal**: Bea ble to navigate the site easily
+
+*Priority*: Medium
+
+
+As a Site Admin;
+
+**Story**: Owner should be able to log into account
+
+**Goal**: Have a site that is easy and smooth to navigate and learn so that viewers will return in the future to view and engage in more content.
+
+*Priority*: High
+
+
+**Story**: Owner should be able to create, display, update and delete post
+
+**Goal**: Create, View, Update and Delete posts
+
+*Priority*: High
+
+
+**Story**: Owner Should be able to approve or delete all comments, whether new or previous
+
+**Goal**: 1. Approve or Disapprove comments/ratings from users
+
+          2. Delete comments/ratings on the site
+
+*Priority*: High
+
+
+**Story**: Owner should be able to retrieve the details of the contact us form submitted by site visitors
+
+**Goal**: Blank forms are not sent ("contact us" form)
+
+*Priority*: Medium 
+
 
 # The Scope Plane
 
@@ -245,10 +349,10 @@ There were a multitude of bugs when developing this project. Below are some exam
 
 - After I had added the review module, I encountered error with accessing the admin site and the main site. After examining the code and error message, it turned out to be a case of not having used a capital letter. This was fixed and the site (both main and admin) ran without issue. 
 
-- Leaving comments - error - after enabling the functionality to leave a comment and press submit. Checked Django documentation - line 49 of views.py file had the attribute of name given instead of "username".
+- Leaving comments - error - after enabling the functionality to leave a comment and press submit. Checked Django documentation - line 49 of `views.py` file had the attribute of name given instead of "username".
 
 - Error flagging once comment is approved through the admin panel. 
-The issue was on line 24 of admin.py file. Should have said "approved" but I had instead typed "approve". This error was fixed. 
+The issue was on line 24 of `admin.py` file. Should have said "approved" but I had instead typed "approve". This error was fixed. 
 
 - The images are not resized and displayed appropriately when the blog is opened. This is an error that needed to be fixed. However due to a shortage of time, and it not being the most important thing on the list, this will need to be fixed in the next phase as per agile working methodology. 
 
@@ -328,58 +432,58 @@ In future I would like to add another app which is solely for rating bags.
 
 Install django and packages with these commands:
 
-- pip3 install 'django<4' gunicorn
-- pip install dj_database_url psycopg2
-- pip3 install dj3-cloudinary-storage pip3 freeze --local > requirements.txt
-- django-admin startproject "project_name".
-- python3 manage.py startapp "app_name"
-- pip3 install django-crispy-forms
+- `pip3 install 'django<4' gunicorn`
+- `pip install dj_database_url psycopg2`
+- `pip3 install dj3-cloudinary-storage pip3 freeze --local > requirements.txt`
+- `django-admin startproject "project_name".`
+- `python3 manage.py startapp "app_name"`
+- `pip3 install django-crispy-forms`
 - Migrate the work using:
-- python3 manage.py makemigrations --dry-run
-- python3 manage.py makemigrations
-- python3 manage.py migrate --plan
-- python3 manage.py migrate
+- `python3 manage.py makemigrations --dry-run`
+- `python3 manage.py makemigrations`
+- `python3 manage.py migrate --plan`
+- `python3 manage.py migrate`
 
 Enter command: python3 manage.py runserver to see the preview.
 It should say that django installed successfully.
 
 ## Env.py file.
-- Add Cloudinary API variable, postgres DATABASE_URL and SECRET_KEY.
-- Ensure env.py is in the gitignore-file
+- Add `Cloudinary API variable`, postgres `DATABASE_URL` and `SECRET_KEY`.
+- Ensure `env.py` is in the `gitignore-file`
 
 ## Commit all changes to GitHub.
-- git add .
-- git commit -m "commit message."
-- git push
+- `git add .`
+- `git commit -m "commit message."`
+- `git push`
 
 ## Set up deployment with Heroku:
-- Register and login to Heroku.
+- Register and login to `Heroku`.
 - Create an app with a unique name and choose the region that is closest to you, USA or Europe.
 - In Heroku/app/resources add postgres and attach it to the database url.
 - Under Settings-> Config vars:
 - Cloudinary is used to store images, therefore a Cloudniary API variable was added to config vars.
-- DISABLE_COLLECTSTATIC: This is to prevent accidentally showing debug messages while DEBUG is True in settings.py
-- Add port 8000
-- Add SECRET_KEY from the env.py file.
+- `DISABLE_COLLECTSTATIC:` This is to prevent accidentally showing debug messages while `DEBUG is True` in `settings.py`
+- Add `port 8000`
+- Add `SECRET_KEY` from the `env.py` file.
 
-- Under Deploy, choose deployment methods Github and search for my repository.
-- The branch to deploy should be set to main.
+- Under Deploy, choose deployment methods `Github` and search for my repository.
+- The branch to deploy should be set to `main`.
 - Deploy branch
 - Login to Heroku in terminal
-- heroku login -i
+- `heroku login -i`
 - Provide Heroku username, email and password.
-- heroku run python3 manage.py migrate --app APP_NAME
+- `heroku run python3 manage.py migrate --app APP_NAME`
 
 ## PostgrSQL as the database for deployment
-- Add the following to the Settings.py file: DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
+- Add the following to the `Settings.py` file: `DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}`
 
-- Set DEBUG = 'DEVELOPMENT' in os.environ
+- Set `DEBUG = 'DEVELOPMENT' in os.environ`
 
-- In env.py add os.environ['DEVELOPMENT'] = 'True'
+- In `env.py` add os.environ['DEVELOPMENT'] = 'True'
 
-- Migrate those changes and push them to github.
+- Migrate those changes and push them to `github`.
 
-- Remove DISABLE_COLLECTSTATIC in heroku config vars.
+- Remove `DISABLE_COLLECTSTATIC` in heroku config vars.
 
 # Resources
 - [Code Institute](https://codeinstitute.net/) Course material & Tutor support
