@@ -13,9 +13,9 @@
             <div class="col-12 d-md-block col-md-6 masthead-image"> 
                 <!-- The featured image URL goes in the src attribute  -->
                  {% if "placeholder" in post.featured_image.url %} 
-                <img src="#placeholder image" width="100%">
+                <img src="#placeholder image" alt="handbag" width="100%">
                 {% else %}
-                <img src=" {{ post.featured_image.url }}" width="100%">
+                <img src=" {{ post.featured_image.url }}" alt="handbag" width="100%">
                 {% endif %}
             </div>
         </div>

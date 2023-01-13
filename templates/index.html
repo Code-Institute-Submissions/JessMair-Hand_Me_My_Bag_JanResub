@@ -13,10 +13,10 @@
                         <div class="card-body">
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
-                                <img class="card-img-top"
+                                <img class="card-img-top" alt="handbag"
                                     src="">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" alt="handbag" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
