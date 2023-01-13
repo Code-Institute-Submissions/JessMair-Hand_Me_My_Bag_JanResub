@@ -50,6 +50,7 @@ The site has been designed to be responsive when displayed on different size dev
 - Create, View, Update and Delete posts
 - Approve or Disapprove comments/ratings from users
 - Delete comments/ratings on the site
+- Blank forms are not sent ("contact us" form)
 - Have a site that is easy and smooth to navigate and learn so that viewers will return in the future to view and engage in more content. 
 
 ## User Requirements and Expectations 
@@ -59,35 +60,40 @@ The site has been designed to be responsive when displayed on different size dev
 - Aesthetically appealing website
 - Easy to locate interactive features of the site such as "logout". 
 
-
 ### Expectations 
-
+- Expect that the navigation links work properly to take the user where they intended to go.
+- Expect to be able to successfully leave, update or delete a comment (If logged in).
+- Expect feedback when user registers, logs in, logs out
+- Expect feedback when user writes, edits or deletes comments
 
 ## User Stories
 
 ### Unregistered User
-
+-   As a user I want the site to be easy to navigate
+-   As a user I want to be able to open and view posts
+-   As a user I want to view other site visitors comments 
+-   As a user I want to be able to register an account with the blog site and for this process to be quick and easy
+-   As a user I want to be able to send a message to the site owner
 
 ### Registered User
--   As a user I want to be able to register an account with the blog site
--   As a user I want account registration to be a quick process
--   As a user I want to be able to open posts
+
 -   As a user I want to be able to like and unlike posts 
--   As a user I want to be able to easily navigate the site 
--   As a user I want to view other site visitors comments 
 -   As a user I want to be able to leave, update and delete my own comments 
 -   As a user I want to be able to leave a rating review of the post/bag 
--   As a user I do not want the site to be cluttered or have any information that does not serve the blogs purpose. 
--   As a user I want the site to be easy to learn so that when I return in the future.
+-   As a user I do not want the site to be clutter free and only contain information that serves the blogs purpose. 
 
 ## Site Admin 
 
+-   Owner should be able to log into account
 -   Owner should be able to create, display, update and delete post
--   Owner Should be able to approve or disapporove comments
--   Owner should be able to delete comments 
--   Owner should be able to recieve the details of the contact us form submitted by site visitors 
--   The user should be able to intuitively navigate the blog and contact pages.  
--   The functions of the blog should be self-explanatory 
+-   Owner Should be able to approve or delete all comments, whether new or previous
+-   Owner should be able to retrieve the details of the contact us form submitted by site visitors  
+-   Owner should be able to retrive messages sent via contact us form. 
+
+## Agile Methodolgy 
+- This application was developed using Agile Methodology. The design and implementation was planned based on user stories and a project board. This project board has a series of user stories that were split into 3 categories; todo, in progress or done. This project board was made using GitHub projects. When working with agile as methodology, priority is given to the most important ascpect of the project and therefore the scope is limited based in the amount of time one has as quality of the development needs to be maintained. There were features I was not able to implement, I have listed them under "future implementation" in the read me.
+Here is a link to my [ProjectBoard](https://github.com/users/JessMair/projects/6/views/1)
+
 
 # The Scope Plane
 
@@ -107,7 +113,7 @@ The features of this project:
 # The Structure Plane 
 
 ## Design Thinking 
-Here the features and functions of the site are detailed. I have tried to keep the design as uniform and consistenet where possible 
+Here the features and functions of the site are detailed. I have tried to keep the design as uniform and consistent where possible 
 ### Blog Features 
 
 - Title header - Empahsize the blog name with a tagline attached that quickly clarifies that it is a blog dedicated to luxury handbags. The title is also responsive. 
@@ -234,9 +240,6 @@ As the majority of blog visitors are likely to be woomen, I wanted to infuse a m
 <img src="media/colorchoice.jpg" alt="Colour Choice Image">
 
 
-## Agile Methodolgy 
-- This application was developed using Agile Methodology. The design and implementation was planned based on user stories and a project board. This project board has a series of user stories that were split into 3 categories; todo, in progress or done. This project board was made using GitHub projects. When working with agile as methodology, priority is given to the most important ascpect of the project and therefore the scope is limited based in the amount of time one has as quality of the development needs to be maintained. There were features I was not able to implement, I have listed them under "future implementation" in the read me.
-Here is a link to my [ProjectBoard](https://github.com/users/JessMair/projects/6/views/1)
 
 # Testing 
 
