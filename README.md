@@ -70,7 +70,7 @@ These stories have been assigned Low, Medium, or High next to the story to clari
 -   As a user I want the site to be easy to navigate - Medium
 -   As a user I want to be able to open and view posts - High
 -   As a user I want to view other site visitors’ comments - Medium
--   As a user I want to be able to register an account with the blog site and for this process to be quick and easy - High
+-   As a user I want to be able to register an account with the site and for this process to be easy - High
 -   As a user I want to be able to send a message to the site owner - Low
 
 ### Registered User (the above and plus+)
@@ -78,7 +78,7 @@ These stories have been assigned Low, Medium, or High next to the story to clari
 -   As a user I want to be able to like and unlike posts - Low
 -   As a user I want to be able to leave, update and delete my own comments - High
 -   As a user I want to be able to leave a rating review of the post/bag - Low
--   As a user I do not want the site to be clutter free and only contain information that serves the blogs purpose. Medium
+-   As a user I want the site to be clutter free and only contain information that serves the blogs purpose - Medium
 
 ## Site Admin 
 
@@ -166,7 +166,7 @@ The comments whether new or updated are approved or disapproved in the admin pan
 
 <img src="media/postouter.png" alt="posts">
 
-- Postimagery when opened 
+- Post when opened - A title of the bag followed by a blog and comments section at the bottom. 
 
 <img src="media/postpage.png" alt="post">
 
@@ -232,7 +232,7 @@ As most blog visitors are likely to be women, I wanted to infuse a more feminine
 # Testing 
 
 - Chrome Developer test - passed. 
-- CSS test   
+- CSS test  - passed.
 - I also completed a HTML test - passed (There were some issues showing related to the use of bootstrap and webkits)
 - [CI Python Linter](https://pep8ci.herokuapp.com/) 
 
@@ -314,6 +314,9 @@ As the number of blogs increase, I will implement a search bar to search designe
 
 - Apps:
 In future I would like to add another app which is solely for rating bags. 
+
+- I would add responsiveness to the blog image so that a user is able to click on the image to access the full post. This would make the site more accessible. I ran out of time and was not able to implement this. 
+
 
 # Deployment 
 
