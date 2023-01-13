@@ -2,14 +2,12 @@
 
 <img src="media/amiresponsive.png" alt="Responsive Site Image">
 
-
 This is my fourth milestone project, undertaken as part of the Code Institutes Diploma in Software Development.
 Here is the link for [Hand Me My Bag](https://handmemybag.herokuapp.com/)
 
 #  Who Is This Website For?
-Hand Me My Bag is a dedicated blog site for handbag enthusiasts. The idea behind the blog is to present high end luxury hand bags, yet to share the blog authors opinions of the bag. The site visitors are also wlecomed to engage in the conversation about the bag by leaving their comments and rating of the bag. 
-The site user can also contact the blog author using the contact us page. The blog site is a place for gaining exposure, knowledge and engagement all whilst sharing a passion for high end luxury handbags. 
-
+Hand Me My Bag is a dedicated blog site for handbag enthusiasts. The idea behind the blog is to present high-end luxury handbags, yet to share the blog authors opinions of the bag. The site visitors are also welcomed to engage in the conversation about the bag by leaving their comments and rating of the bag. 
+The site user can also contact the blog author using the contact us page. The blog site is a place for gaining exposure, knowledge, and engagement all whilst sharing a passion for high end luxury handbags. 
 
 # UX - User Experience 
 
@@ -29,9 +27,9 @@ The project was planned in 5 stages.
 
 ## User Persona
 
-This website is targetted predominately towards women and some men who are luxury handbag enthusiasts. 
+This website is targeted predominately towards women and some men who are luxury handbag enthusiasts. 
 
-The main focus of this site has been to provide a clean aesthetic to the site, with ease of navigation.
+The focus of this site has been to provide a clean aesthetic to the site, with ease of navigation.
 The site has been designed to be responsive when displayed on different size devices. 
 
 ## User Goals 
@@ -39,14 +37,13 @@ The site has been designed to be responsive when displayed on different size dev
 - View the posts on the website 
 - Send a message to the site admin
 
-### Registered - The above and...
+### Registered (the above and plus+)
 - Like posts
 - Create and View own comment on the post 
 - Update and Delete own comment on the post  
 - Leave, View, Edit or Delete own rating on a post
 
-
-## Site Owner Goals
+### Site Owner Goals
 - Create, View, Update and Delete posts
 - Approve or Disapprove comments/ratings from users
 - Delete comments/ratings on the site
@@ -56,7 +53,7 @@ The site has been designed to be responsive when displayed on different size dev
 ## User Requirements and Expectations 
 ### Requirement
 - Easy to navigate 
-- Content on post are relavant to the purposeof the blog
+- Content on post are relevant to the purpose of the blog
 - Aesthetically appealing website
 - Easy to locate interactive features of the site such as "logout". 
 
@@ -64,42 +61,42 @@ The site has been designed to be responsive when displayed on different size dev
 - Expect that the navigation links work properly to take the user where they intended to go.
 - Expect to be able to successfully leave, update or delete a comment (If logged in).
 - Expect feedback when user registers, logs in, logs out
-- Expect feedback when user writes, edits or deletes comments
+- Expect feedback when user writes, edits, or deletes comments
 
 ## User Stories
+These stories have been assigned Low, Medium, or High next to the story to clarify which order the stories are to be prioritized in. 
 
 ### Unregistered User
--   As a user I want the site to be easy to navigate
--   As a user I want to be able to open and view posts
--   As a user I want to view other site visitors comments 
--   As a user I want to be able to register an account with the blog site and for this process to be quick and easy
--   As a user I want to be able to send a message to the site owner
+-   As a user I want the site to be easy to navigate - Medium
+-   As a user I want to be able to open and view posts - High
+-   As a user I want to view other site visitors’ comments - Medium
+-   As a user I want to be able to register an account with the blog site and for this process to be quick and easy - High
+-   As a user I want to be able to send a message to the site owner - Low
 
-### Registered User
+### Registered User (the above and plus+)
 
--   As a user I want to be able to like and unlike posts 
--   As a user I want to be able to leave, update and delete my own comments 
--   As a user I want to be able to leave a rating review of the post/bag 
--   As a user I do not want the site to be clutter free and only contain information that serves the blogs purpose. 
+-   As a user I want to be able to like and unlike posts - Low
+-   As a user I want to be able to leave, update and delete my own comments - High
+-   As a user I want to be able to leave a rating review of the post/bag - Low
+-   As a user I do not want the site to be clutter free and only contain information that serves the blogs purpose. Medium
 
 ## Site Admin 
 
--   Owner should be able to log into account
--   Owner should be able to create, display, update and delete post
--   Owner Should be able to approve or delete all comments, whether new or previous
--   Owner should be able to retrieve the details of the contact us form submitted by site visitors  
--   Owner should be able to retrive messages sent via contact us form. 
+-   Owner should be able to log into account - High
+-   Owner should be able to create, display, update and delete post - High
+-   Owner Should be able to approve or delete all comments, whether new or previous - High
+-   Owner should be able to retrieve the details of the contact us form submitted by site visitors - Medium
+-   Owner should be able to retrieve messages sent via contact us form - Low
 
-## Agile Methodolgy 
-- This application was developed using Agile Methodology. The design and implementation was planned based on user stories and a project board. This project board has a series of user stories that were split into 3 categories; todo, in progress or done. This project board was made using GitHub projects. When working with agile as methodology, priority is given to the most important ascpect of the project and therefore the scope is limited based in the amount of time one has as quality of the development needs to be maintained. There were features I was not able to implement, I have listed them under "future implementation" in the read me.
+## Agile Methodology 
+- This application was developed using Agile Methodology. The design and implementation was planned based on user stories and a project board. This project board has a series of user stories that were split into 3 categories: to-do, in progress or done. This project board was made using GitHub projects. When working with agile as methodology, priority is given to the most important aspect of the project and therefore the scope is limited based in the amount of time one has as quality of the development needs to be maintained. There were features I was not able to implement, I have listed them under "future implementation" in the read me.
 Here is a link to my [ProjectBoard](https://github.com/users/JessMair/projects/6/views/1)
-
 
 # The Scope Plane
 
 The features of this project:
 
-5 page /
+5 pages /
 - Home, Register, Login, Logout, Contact Us
 - Pagination 
 - Posts 
@@ -107,8 +104,7 @@ The features of this project:
 - Comments form for registered user to submit 
 - Contact us form for all site visitors to complete and submit 
 - Crud functionality (Create, Read, Update and Delete) - Applied to the comments model
-- Success messages (Sucessfully register, login, logout, update comment, delete comment or post comment)
-
+- Success messages (Successfully register, login, logout, update comment, delete comment or post comment)
 
 # The Structure Plane 
 
@@ -116,20 +112,17 @@ The features of this project:
 Here the features and functions of the site are detailed. I have tried to keep the design as uniform and consistent where possible 
 ### Blog Features 
 
-- Title header - Empahsize the blog name with a tagline attached that quickly clarifies that it is a blog dedicated to luxury handbags. The title is also responsive. 
+- Title header - Emphasize the blog name with a tagline attached that quickly clarifies that it is a blog dedicated to luxury handbags. The title is also responsive. 
 
 <img src="media/headnavbar.png" alt="hero image">
 
-
-- Navbar - Resposive and navigates to the Home page, Login or Logout, Register and Contact Us pages. 
-
+- Navbar - Responsive and navigates to the Home page, Login or Logout, Register and Contact Us pages. 
 
 <img src="media/navbar.png" alt="navbar">
 
 - Home page - This is the landing page. I have tried to keep the site clean and free from over congestion of images or words. The idea behind this is for the page to present as visually appealing to the site user. 
 
 <img src="media/homepage.png" alt="homepage">
-
 
 - Register, Login and Logout
 
@@ -141,7 +134,7 @@ All button change colour when hovered over with a mouse.
 
 <img src="media/duringhover.png" alt="hover">
 
-- Site Pagination - Each page displays upto 6 posts 
+- Site Pagination - Each page displays up to 6 posts 
 
 <img src="media/pagination1.png" alt="paginationnext">
 <img src="media/pagination2.png" alt="paginationprev">
@@ -150,10 +143,9 @@ All button change colour when hovered over with a mouse.
 
 <img src="media/commentform.png" alt="comments form">
 
-- Comments section for users who are not logged in will not diplay the form to input. Instead they are given a link to follow to sign in. 
+- Comments section for users who are not logged in will not display the form to input. Instead, they are given a link to follow to sign in. 
 
 <img src="media/commentssection.png" alt="comments">
-
 
 - Edit and delete buttons to allow site user to update and delete their own comments only. 
 
@@ -162,7 +154,7 @@ All button change colour when hovered over with a mouse.
 - Process of updating a comment 
 The User can update their comment and the rating which they have given. 
 They can also delete their comments too and are asked to confirm this option. 
-The comments whether new or upodated are approved or disapproved in the admin panel. 
+The comments whether new or updated are approved or disapproved in the admin panel. 
 
 <img src="media/udcprocess.png" alt="comment">
 
@@ -170,7 +162,7 @@ The comments whether new or upodated are approved or disapproved in the admin pa
 
 <img src="media/adminpage.png" alt="admin">
 
-- Posts - The blog posts have an image of the bag, its name, the date the post was created, and an excerpt. The full post contains teh actual blog about the bag. 
+- Posts - The blog posts have an image of the bag, its name, the date the post was created, and an excerpt. The full post contains the actual blog about the bag. 
 
 <img src="media/postouter.png" alt="posts">
 
@@ -178,18 +170,16 @@ The comments whether new or upodated are approved or disapproved in the admin pa
 
 <img src="media/postpage.png" alt="post">
 
-
 - Contact Us form - A simple form that contains a name, subject and message field to enable even a non registered site visitor to get in touch.
 
 <img src="media/contactpage.png" alt="contact us form"> 
-
 
 - Likes - A small heart which is clear but turns a blush pink colour when the site user clicks on it. 
 
 <img src="media/likes.jpg" alt="Likes">
 
 - Favicon 
-I decided to use a premade favicon of a habdbag. I wanted something bright that would stand out on the tab bar. 
+I decided to use a premade favicon of a handbag. I wanted something bright that would stand out on the tab bar. 
 
 <img src="media/tabfavicon.png" alt="favicon"> 
 
@@ -227,50 +217,48 @@ Below is a link to the original wireframe I had completed
 
 [wireframe3](media/wireframe3.jpg)
 
-I was able to implement most of what I had planned out orginally. 
-
+I made some tweaks along the way but was able to implement most of what I had planned out originally. 
 
 # Surface Plane 
 ## Design Tools / Colour Palette
 - Canva
 
 I used Canva to finalise on a colour theme for the blog. I wanted the predominant colour themes to be complimentary of each other. 
-As the majority of blog visitors are likely to be woomen, I wanted to infuse a more feminine touch to the site. The easist way to do so was by using colours that are more reminicent of femininity. These hues of red, brown and pink are great for contrasting against one another and whilst embodying refinement. 
+As most blog visitors are likely to be women, I wanted to infuse a more feminine touch to the site. The easiest way to do so was by using colours that are more reminiscent of femininity. These hues of red, brown, and pink are great for contrasting against one another and whilst embodying refinement. 
 
 <img src="media/colorchoice.jpg" alt="Colour Choice Image">
-
 
 
 # Testing 
 
 - Chrome Developer test - passed. 
 - CSS test   
-- I also completed a HTML test - passed
+- I also completed a HTML test - passed (There were some issues showing related to the use of bootstrap and webkits)
 - [CI Python Linter](https://pep8ci.herokuapp.com/) 
 
-
 ## Bugs 
-There were a multitude of bugs when developing this project. Below are some example of the bugs I encountered. 
+There were a multitude of bugs when developing this project. Below are some examples of the bugs I encountered. 
 
-- After I had added the review module, I encountered error with acessing the admin site and the main site. After examining the code and error message, it turned out to be a case of not having used a capital letter. This was fixed and the site (both main and admin) ran without issue. 
+- After I had added the review module, I encountered error with accessing the admin site and the main site. After examining the code and error message, it turned out to be a case of not having used a capital letter. This was fixed and the site (both main and admin) ran without issue. 
 
-- Leaving comments - error - after enabling the functionality to leave a comment and press submit. Checked django documentation - line 49 of views.py file had the attribute of name given instead of "username".
+- Leaving comments - error - after enabling the functionality to leave a comment and press submit. Checked Django documentation - line 49 of views.py file had the attribute of name given instead of "username".
 
 - Error flagging once comment is approved through the admin panel. 
-The issue was on line 24 of admin.py file. Should have said "approved" but i had instead typed "approve". This error was fixed. 
+The issue was on line 24 of admin.py file. Should have said "approved" but I had instead typed "approve". This error was fixed. 
 
 - The images are not resized and displayed appropriately when the blog is opened. This is an error that needed to be fixed. However due to a shortage of time, and it not being the most important thing on the list, this will need to be fixed in the next phase as per agile working methodology. 
 
+- There was an issue where a user would be able to edit or delete another users comments. This was resolved by restricting the unauthorised users view to the edit and delete buttons unless the object (comment) they were viewing is linked to their profile. This resolved the issue. 
 
 ## Manual Testing 
-- Test all links in NavBar work 
+- Test all links in Navbar work 
 
 - Test site pagination works 
 
 - Test that the 'like' feature worked 
 
 - Test a Post Model: 
-Posts can be created, displayed, updated and deleted 
+Posts can be created, displayed, updated, and deleted 
 Check the full post can be read by clicking on the post name
 
 - Test Comments Model: 
@@ -284,7 +272,8 @@ The user can update and delete their own comments only
 
 - Contact Model
 Anyone can submit the 'Contact Us' form
-
+The form will not submit if any of the fields are empty
+The form requires the email field to have an email in it to be submittable 
 
 # Technologies used 
 ### Languages
@@ -299,10 +288,10 @@ Anyone can submit the 'Contact Us' form
 - Bootstrap
 
 ### Databases
-- Postgresql
+- PostgreSQL
 
 ### Django Extensions
-- AllAuth
+- All AUTH
 - Summernote 
 - Django Crispy Forms 
 
@@ -311,22 +300,20 @@ Anyone can submit the 'Contact Us' form
 - Heroku
 - Gunicorn
 
-
 # Future implementation 
 - Single sign on using allauth:
 Using social media to sign in to the blog would make the user experience better and encourage more traffic to the site. 
 
 - Design:
-I would like to make the blog more visually aesthitic, I have a few ideas in ming for this. I would make the interger rating under the comment form into stars and this change would reflect on the already rated comments. This would look more presentable. 
+I would like to make the blog more visually aesthetic, I have a few ideas in mind for this. I would make the integer rating under the comment form into stars and this change would reflect on the already rated comments. This would look more presentable. 
 
-The login and signout pages would also be targetted by bootsrap to look more inline with the rest of the blog. I did make a start on this but I did not have time to comeplete this. 
+The login and sign out pages would also be targeted by bootstrap to look more in line with the rest of the blog. I did make a start on this, but I did not have time to complete this. 
 
 - Search functionality 
-As the number of blogs increase, I will implement a search bar to search designers. This will return all of the posts by that particular designer. 
+As the number of blogs increase, I will implement a search bar to search designers. This will return all the posts by that particular designer. 
 
 - Apps:
-In future I would like to add another app which is solely for rating bag
-
+In future I would like to add another app which is solely for rating bags. 
 
 # Deployment 
 
@@ -358,12 +345,12 @@ It should say that django installed successfully.
 - git commit -m "commit message."
 - git push
 
-## Set up delpoyment with Heroku:
+## Set up deployment with Heroku:
 - Register and login to Heroku.
 - Create an app with a unique name and choose the region that is closest to you, USA or Europe.
 - In Heroku/app/resources add postgres and attach it to the database url.
 - Under Settings-> Config vars:
-- Cloudinary is used to store images, therefore a Cloudniery API variable was added to config vars.
+- Cloudinary is used to store images, therefore a Cloudniary API variable was added to config vars.
 - DISABLE_COLLECTSTATIC: This is to prevent accidentally showing debug messages while DEBUG is True in settings.py
 - Add port 8000
 - Add SECRET_KEY from the env.py file.
@@ -387,7 +374,6 @@ It should say that django installed successfully.
 
 - Remove DISABLE_COLLECTSTATIC in heroku config vars.
 
-
 # Resources
 - [Code Institute](https://codeinstitute.net/) Course material & Tutor support
 - [Code Institute](https://codeinstitute.net/) Slack community 
@@ -397,12 +383,11 @@ It should say that django installed successfully.
 - [Peps](http://pep8online.com/) Python Validation 
 - [JSHint](https://jshint.com/) JavaScript Validation 
 - [W3Schools](https://www.w3schools.com/) - Helped me in researching and fixing errors along the way
-- [Stack Overflow](https://stackoverflow.com/) To troubleshoot many times when experincing issues  
+- [Stack Overflow](https://stackoverflow.com/) To troubleshoot many times when experiencing issues  
 - [Geeks For Geeks](www.geeksforgeeks.org) Research and fix errors 
 - [Canva](https://www.canva.com/colors/color-palettes/cherry-blossom-swirl/) Colour theory
-- [ChatGPT]{https://chat.openai.com/chat} - Elaborate blog content
+- [ChatGPT](https://chat.openai.com/chat) - Elaborate blog content
 - [Favicon](https://icons8.com/icons/set/handbag) - Handbag favicon
-
 
 # Credits 
 - Django "I think, therefore I blog"  Code Institute Documentation
@@ -411,7 +396,7 @@ It should say that django installed successfully.
 
 - General help with models https://docs.djangoproject.com/en/4.1/topics/db/models/  
 
-- Trouble swhooting https://docs.djangoproject.com/en/4.1/ref/contrib/auth/#fields 
+- Trouble shooting https://docs.djangoproject.com/en/4.1/ref/contrib/auth/#fields 
 
 - Bug issues https://www.pythonfixing.com/2021/12/fixed-attributeerror-object-has-no_14.html
 
@@ -424,25 +409,11 @@ It should say that django installed successfully.
 
 ## Honourable mentions 
 
-Tutor support at Code institute for their incredible patience and doing their level best to help me with the hundred and one issue i had during the development of this project. 
+Tutor support at Code institute for their incredible patience and doing their level best to help me with the hundred and one issue I had during the development of this project. 
 
-London Community on the Code Institute Slack channel. In particular, Harry, Ed, Claire, Mike and Tom. Some of the most contientous people I know who took the time to peer review and provide some constructive feedback that helped me bring this project to completion. 
+London Community on the Code Institute Slack channel. In particular, Harry, Ed, Claire, Mike and Tom. Some of the most contentious people I know who took the time to peer review and provide some constructive feedback that helped me bring this project to completion. 
 
-My mentor Spencer Barriball who has alway been the most supportive and informative person. I have a great deal of respect for Soencer's depth of knowledge across the various technologies, needless to say, I am very grateful for his mentorship. 
+My mentor Spencer Barriball who has always been the most supportive and informative person. I have a great deal of respect for Spencer’s depth of knowledge across the various technologies, needless to say, I am very grateful for his mentorship. 
 
+My husband for having the utmost patience and consideration for me during this project. 
 
-## Images 
-- Hero Image https://mygemma.com/collections/handbags
-
-- Christian Dior bag https://www.dior.com/en_int/fashion/womens-fashion/bags/saddle?adlgid=c%7Cg%7Cchristian%20dior%20saddlebag%7C611983108215%7Ce&gclid=Cj0KCQjw9ZGYBhCEARIsAEUXITWwFAxI9EhJBTS6RPBiY6z4kTuyWfVLkKlV3RlEJlKaOgYLtnKsHjIaAj1XEALw_wcB 
-
-- Hermes bag https://www.hermes.com/us/en/story/106191-birkin/ 
-- Chanel bag https://bagista.co.uk/products/pre-loved-chanel-classic-flap-bag-small-black-lambskin-cghw?_pos=3&_sid=4054dba54&_ss=r 
-
-- YSL bag https://www.matchesfashion.com/products/1498988?country=GBR&utm_source=google&utm_medium=cpc&utm_content=1498988000001&utm_term=1655823569736&gclid=CjwKCAjwsfuYBhAZEiwA5a6CDPBJjQYG3Avv5M3HEtqjgGTFwocmgzcmmW-7IVtliUYhb3_x_TyRXBoCHOMQAvD_BwE&gclsrc=aw.ds 
-
-- Louis Vuitton bag https://uk.louisvuitton.com/eng-gb/products/speedy-bandouliere-25-bag-nvprod3160026v?gclid=CjwKCAjwsfuYBhAZEiwA5a6CDNxxoGMZv0lEvPgiMFEnMxN0nLX8xEzfTCJ-VZwlq2UPRidYyVfpvRoCEMEQAvD_BwE
-
-- Givency bag https://www.givenchy.com/gb/en/medium-antigona-bag/3594655629428.html?gclid=CjwKCAjwsfuYBhAZEiwA5a6CDBNxyZJlbJ8W_Wj0KXnYZJvOaM4W4R7a1TwOIbIKuyPTaBLy0DBSFhoCh_0QAvD_BwE&page=cmpid&page=cmpid
-
-- Christian Dior Pouchette bag https://www.dior.com/en_gb/fashion/products/S0937ONMJ_M41G-lady-dior-chain-pouch 
